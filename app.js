@@ -1,4 +1,7 @@
-alert("Hi this is app.js")
-var username = prompt("Enter your name :")
-console.log("hello "+ username)
-alert("hello "+ username)
+var btnTranslate = document.querySelector("#btn-translate")
+console.log(btnTranslate);
+
+btnTranslate.addEventListener("click",function clickEventHandler()
+{
+    console.log("you clicked the button")
+})
