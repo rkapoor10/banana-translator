@@ -10,11 +10,32 @@
 </head>
 
 <body>
-    <h1>Speak Banana!! </h1>
-    <textarea id="txt-input" placeholder="Enter text here..."></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: larger;" >translation in banana🔽</div>
-    <div id="output"></div>
+    <nav class="navigation">
+        <h1>BANANA TRANSLATOR</h1>
+    </nav>
+
+    <header class="minion">
+        <img class="minion-img" src="/images/minion.png" alt="">
+        <h1 class="minion-heading" ><span  style="color: var(--secondary-color);">Speak Banana!!</span></h1>
+
+    </header>
+    
+    <textarea id="txt-input" placeholder="Enter text here..." class="box-style"></textarea>
+    <div style="padding: 1rem;"> </div>
+
+    <button id="btn-translate" class="btn-style" style="font-family: fredoka one;">
+        Translate
+    </button>
+    <div style="padding: 1rem;"> </div>
+
+    <div style="font-size: larger; text-align: center;">translation in banana🔽</div>
+
+    <div id="output" class="box-style"></div>
+    <div style="padding: 1rem;"> </div>
+    <footer class="footer">
+        <h1>about</h1>
+        <p style="font-size: larger;">ARE YOU A FAN OF MINIONS??  Did you know that the gibberish they speak is an actual language. Use this translator to convert English text to Minion's tongue or the Banana language.</p>
+    </footer>
     <script src="app.js"></script>
 
 </body>
