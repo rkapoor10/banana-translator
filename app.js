@@ -11,6 +11,11 @@ function getTranslationalURL(text)
     return serverURL + "?" + "text=" + text;
 }
 
+function errorHandler()
+{
+    console.log("error occured",error);
+    alert("Something wrong with server! Please try again later.")
+}
 
 function clickHandler()
 {
@@ -25,6 +30,7 @@ function clickHandler()
     fetch(getTranslationalURL(inputText))
     .then(response=>response.json())
     .then(json=>console.log(json.contents.translated))
+    catch(errorHandler)
   
 };
 
