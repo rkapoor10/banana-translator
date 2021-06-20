@@ -46,13 +46,13 @@ nav
     font-size: 4vh;
 }
 
-#btn-translate{
+.btn{
     width: 20%;
     height: 8vh;
     display: block;
     padding: 1rem;
     margin: auto;
-    background-color: var(--primary-color);
+    
     border-radius: 3rem;
     font-size: 3vh;
 
@@ -64,7 +64,11 @@ nav
 }
 
 .btn-style{
-    font-size: larger;    
+    font-size: larger; 
+    background-color: var(--primary-color);   
+}
+.btn-invert{
+    background-color: #065aeb;
 }
 
 .box-style{

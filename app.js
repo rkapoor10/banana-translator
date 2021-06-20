@@ -1,14 +1,15 @@
 var btnTranslate = document.querySelector("#btn-translate")
+var btnInvert = document.querySelector(".btn-invert")
 var txtInput = document.querySelector("#txt-input")
 var outputDiv = document.querySelector("#output")
 // outputDiv.innerText = "Ritik Kapoor"
 // console.log(outputDiv)
-
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+var n=1;
+var serverURL = "https://lessonfourapi.ritikkapoor.repl.co/translate/yoda.json"
 
 function getTranslationalURL(text)
 {
-    return serverURL + "?" + "text=" + text;
+    return serverURL + "?" + "text=" + text + "&&" + "no=" + n;
 }
 
 function errorHandler()
@@ -36,4 +37,10 @@ function clickHandler()
   
 };
 
+function clickedInvert(){
+    n = n+1;
+    
+
+}
+btnInvert.addEventListener("click",clickedInvert)
 btnTranslate.addEventListener("click", clickHandler)
