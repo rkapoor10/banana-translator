@@ -11,7 +11,7 @@ function getTranslationalURL(text)
     return serverURL + "?" + "text=" + text;
 }
 
-function errorHandler()
+function errorHandler(error)
 {
     console.log("error occured",error);
     alert("Something wrong with server! Please try again later.")

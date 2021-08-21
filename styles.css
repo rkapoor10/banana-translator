@@ -55,6 +55,7 @@ nav
     background-color: var(--primary-color);
     border-radius: 3rem;
     font-size: 3vh;
+    cursor: pointer;
 
 }
 
